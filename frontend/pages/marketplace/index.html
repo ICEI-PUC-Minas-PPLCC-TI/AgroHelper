@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace - AgroHelper</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="logo">
+                <a href="../../index.html">🌱 AgroHelper</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../auth/login.html">Login</a></li>
+                <li><a href="../auth/register.html">Cadastro</a></li>
+                <li><a href="../dashboard/index.html">Dashboard</a></li>
+                <li><a href="index.html" class="active">Marketplace</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="marketplace-dashboard">
+            <h1>Marketplace AgroHelper</h1>
+            
+            <div class="marketplace-grid">
+                <!-- Filtros e Pesquisa -->
+                <aside class="filters">
+                    <h2>Filtros</h2>
+                    <div class="filter-group">
+                        <label for="category">Categoria</label>
+                        <select id="category">
+                            <option value="">Todas</option>
+                            <option value="grains">Grãos</option>
+                            <option value="fruits">Frutas</option>
+                            <option value="vegetables">Legumes</option>
+                            <option value="equipment">Equipamentos</option>
+                            <option value="services">Serviços</option>
+                            <option value="inputs">Insumos</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="price-range">Faixa de Preço</label>
+                        <input type="range" id="price-range" name="price-range" min="0" max="50000" step="100">
+                        <span id="price-value">R$ 25000</span> <!-- Example value display -->
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="location">Localização</label>
+                        <input type="text" id="location" placeholder="Digite sua região">
+                    </div>
+                    
+                    <button class="btn primary">Aplicar Filtros</button>
+                </aside>
+
+                <!-- Listagem de Produtos -->
+                <div class="product-list">
+                    <!-- Exemplo Produto 1 -->
+                    <div class="product-card">
+                        <img src="https://images.tcdn.com.br/img/img_prod/248016/1233_1_20161129091559.jpg" alt="Milho Orgânico"> <!-- Placeholder image path -->
+                        <div class="product-info">
+                            <h3>Milho Orgânico (Saca 60kg)</h3>
+                            <p class="description">Milho de alta qualidade, cultivado sem agrotóxicos.</p>
+                            <p class="price">R$ 120,00 / saca</p>
+                            <p class="location"><small>Vendido por: Fazenda Sol Nascente</small></p>
+                            <p class="location">📍 Minas Gerais</p>
+                            <a href="product-detail.html?id=1" class="btn secondary">Ver Detalhes</a> <!-- Link para detalhe -->
+                        </div>
+                    </div>
+
+                    <!-- Exemplo Produto 2 -->
+                    <div class="product-card">
+                        <img src="https://i.ytimg.com/vi/l9g0LLmIuOc/maxresdefault.jpg" alt="Trator Usado"> <!-- Placeholder image path -->
+                        <div class="product-info">
+                            <h3>Trator Agrícola Usado MF 275</h3>
+                            <p class="description">Trator em bom estado, revisado, ano 2010.</p>
+                            <p class="price">R$ 45.000,00</p>
+                            <p class="location"><small>Vendido por: AgroEquipamentos SP</small></p>
+                            <p class="location">📍 São Paulo</p>
+                            <a href="product-detail.html?id=2" class="btn secondary">Ver Detalhes</a> <!-- Link para detalhe -->
+                        </div>
+                    </div>
+
+                    <!-- Exemplo Produto 3 -->
+                    <div class="product-card">
+                        <img src="https://s2-g1.glbimg.com/zyHeXZ6-Pcd50k4y715TcxRjhHI=/696x390/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/5/a/jq6pNUT22Zl2AmHAXAQA/laranja-packing-house-dsc00930-.jpg" alt="Laranja Pera Orgânica"> <!-- Placeholder image path -->
+                        <div class="product-info">
+                            <h3>Laranja Pera Orgânica (Caixa 20kg)</h3>
+                            <p class="description">Laranjas frescas e suculentas, certificadas.</p>
+                            <p class="price">R$ 50,00 / caixa</p>
+                            <p class="location"><small>Vendido por: Sítio Boa Esperança</small></p>
+                            <p class="location">📍 Bahia</p>
+                            <a href="product-detail.html?id=3" class="btn secondary">Ver Detalhes</a> <!-- Link para detalhe -->
+                        </div>
+                    </div>
+
+                     <!-- Exemplo Produto 4 -->
+                     <div class="product-card">
+                        <img src="https://www.siagri.com.br/wp-content/uploads/2021/04/medium-shot-man-with-tablet-scaled.jpg" alt="Consultoria Agrícola"> <!-- Placeholder image path -->
+                        <div class="product-info">
+                            <h3>Consultoria Agrícola Especializada</h3>
+                            <p class="description">Análise de solo, planejamento de safra e manejo integrado.</p>
+                            <p class="price">R$ 300,00 / hora</p>
+                            <p class="location"><small>Oferecido por: AgroConsult</small></p>
+                            <p class="location">📍 Remoto / Nacional</p>
+                            <a href="product-detail.html?id=4" class="btn secondary">Ver Detalhes</a> <!-- Link para detalhe -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>AgroHelper &copy; 2025</p>
+    </footer>
+
+    <script>
+        // Script for price range slider
+        const priceRange = document.getElementById('price-range');
+        const priceValue = document.getElementById('price-value');
+
+        if (priceRange && priceValue) {
+            // Update display initially
+            priceValue.textContent = `R$ ${parseInt(priceRange.value).toLocaleString('pt-BR')}`;
+
+            // Update display on change
+            priceRange.addEventListener('input', (event) => {
+                priceValue.textContent = `R$ ${parseInt(event.target.value).toLocaleString('pt-BR')}`;
+            });
+        }
+
+        /* // Simulação de verificação de autenticação ao carregar a página - TEMPORARIAMENTE DESABILITADO PARA APRESENTAÇÃO
+        document.addEventListener('DOMContentLoaded', () => {
+            const token = localStorage.getItem('authToken');
+            if (!token) {
+                alert('Você precisa estar logado para acessar o Marketplace.');
+                window.location.href = '../auth/login.html'; // Redireciona se não houver token
+            }
+        });
+        */
+    </script>
+</body>
