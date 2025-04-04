@@ -47,22 +47,6 @@ O **AgroHelper** é um sistema web desenvolvido para auxiliar pequenos e médios
 
 ## 📂 Estrutura do Projeto  
 
-### 📌 Backend (Java + Spring Boot)
-```
-agrohelper-backend/
-│── src/
-│   ├── main/java/com/agrohelper/
-│   │   ├── controllers/    # Controladores REST
-│   │   ├── models/         # Modelos das entidades do banco de dados
-│   │   ├── repositories/   # Interfaces para interação com o banco de dados
-│   │   ├── services/       # Lógica de negócio
-│   ├── resources/
-│   │   ├── application.properties  # Configurações do banco de dados
-│── pom.xml    # Dependências do Maven
-│── Dockerfile # Configuração para containerização
-│── README.md  # Documentação do projeto
-```
-
 ### 📌 Front-end (HTML, CSS e JavaScript)
 ```
 agrohelper-frontend/
